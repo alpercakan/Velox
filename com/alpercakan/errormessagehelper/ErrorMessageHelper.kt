@@ -42,38 +42,10 @@ object ErrorMessageHelper {
     fun getErrorTitle(errorType: ErrorType) = getErrorMessageAndTitle(errorType).second
 
     enum class ErrorType(val type: Int) {
-        USER_TOKEN_CANNOT_BE_NULL(0),
-        USER_ID_CANNOT_BE_NULL(1),
-        CHAT_MESSAGE_LENGTH_EXCEEDS_MAXIMUM(2),
-        NULL_RESPONSE(3),
-        PUSHER_AUTH_TOKEN_CANNOT_BE_NULL(4),
-        PUSHER_EVENT_DATA_CANNOT_BE_NULL(5),
-        CHAT_MESSAGE_CONTENT_CANNOT_BE_NULL(6),
-        CHAT_MESSAGE_TIME_CANNOT_BE_NULL(7),
-        USER_NAME_CANNOT_BE_NULL(8),
-        USER_SURNAME_CANNOT_BE_NULL(9),
-        COMPANY_NAME_CANNOT_BE_NULL(10),
-        VIEW_NOT_CONNECTED(11),
-        LAST_SEEN_CANNOT_BE_NULL(12),
-        LATITUDE_CANNOT_BE_NULL(13),
-        LONGITUDE_CANNOT_BE_NULL(14),
-        PROFILE_TYPE_ILLEGAL(15),
-        TAB_INDEX_IS_OUT_OF_BOUNDS(16),
-        JOB_ID_CANNOT_BE_NULL(17),
-        JOB_APPLICATION_STATUS_CANNOT_BE_NULL(18),
-        JOB_DISTANCE_CANNOT_BE_NULL(19),
-        JOB_TITLE_CANNOT_BE_NULL(20),
-        CREATION_TIME_CANNOT_BE_NULL(21),
-        ERROR_MESSAGE_IS_NULL(22),
-        PROFILE_CANNOT_BE_NULL(23),
-        CHAT_ID_CANNOT_BE_NULL(24),
-        JOB_DESCRIPTION_CANNOT_BE_NULL(25),
-        CATEGORY_NAME_CANNOT_BE_NULL(26),
-        APPLICATION_ID_CANNOT_BE_NULL(27),
-        JOB_SEARCH_FAILED(28),
-        MAP_FRAGMENT_NULL(29),
-        CONNECTION_PROBLEM(30),
-        MAP_NO_LOCATION_FOUND_WITH_THE_QUERY(31),
-        MAP_LOCATION_SEARCH_PROBLEM(32)
+        /*
+         * Write error types here. For example, following error type will be mapped to "error_message_user_name_cannot_be_null"
+         * and "error_title_user_name_cannot_be_null" from the strings.xml
+         */
+        USER_NAME_CANNOT_BE_NULL(0)
     }
 }
