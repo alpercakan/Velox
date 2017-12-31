@@ -1,13 +1,15 @@
 package com.alpercakan.errormessagehelper
 
 import android.content.res.Resources
-import com.isbugun.android.R
 import java.util.*
 
 object ErrorMessageHelper {
     private val ERROR_MESSAGES_XML_BASE_NAME = "error_message_"
     private val ERROR_TITLES_XML_BASE_NAME = "error_title_"
-
+    
+    var unidentifiedErrorMessage = ""
+    var unidentifiedErrorTitle = ""
+    
     lateinit var resources: Resources
     lateinit var packageName: String
 
@@ -31,7 +33,7 @@ object ErrorMessageHelper {
         if (messageResourceID == null ||
                 titleResourceID == null ||
                 errorType == ErrorType.ERROR_MESSAGE_IS_NULL) {
-            return getPair(R.string.unidentified_error_message, R.string.unidentified_error_title)
+            return getPair(unidentifiedErrorMessage, unidentifiedErrorTitle)
         }
 
         return getPair(messageResourceID, titleResourceID)
