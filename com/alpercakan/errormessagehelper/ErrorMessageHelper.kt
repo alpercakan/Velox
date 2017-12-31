@@ -46,6 +46,7 @@ object ErrorMessageHelper {
          * Write error types here. For example, following error type will be mapped to "error_message_user_name_cannot_be_null"
          * and "error_title_user_name_cannot_be_null" from the strings.xml
          */
-        USER_NAME_CANNOT_BE_NULL(0)
+        USER_NAME_CANNOT_BE_NULL(0),
+        ERROR_MESSAGE_IS_NULL(1)
     }
 }
