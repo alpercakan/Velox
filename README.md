@@ -1,5 +1,5 @@
 # Velox
-A developer-friendly, very small library written in Kotlin for Android, which allows you to handle errors in your app just by defining one-line exception classes. Using this library, you can easily retrieve translated error message and title from the resources.
+A very small library written in Kotlin for Android, which allows you to handle error messages in your app just by defining one-line exception classes. Using this library, you can easily retrieve translated error message and title from the resources.
 
 **Current version is only enum-based, i.e., you add your error types to the enum in the library. In very short time, it will be turned in to the version mentioned above.**
 
